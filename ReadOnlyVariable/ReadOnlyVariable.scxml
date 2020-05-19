@@ -17,14 +17,14 @@
 		</initial>
 		<state id="StateB">
 			<onentry>
-					 <assign location="myInt" expr="100"/>
-					 <assign location="myString" expr="'fail'"/>
-					 <assign location="myBool" expr="false"/>
-					 <assign location="myReal" expr="6.6"/>
-					 <assign location="A_myInt" expr="200"/>
-					 <assign location="A_myString" expr="'A_fail'"/>
-					 <assign location="A_myBool" expr="false"/>
-					 <assign location="A_myReal" expr="7.7"/>
+				 <assign location="myInt" expr="100"/>
+				 <assign location="myString" expr="'fail'"/>
+				 <assign location="myBool" expr="false"/>
+				 <assign location="myReal" expr="6.6"/>
+				 <assign location="A_myInt" expr="200"/>
+				 <assign location="A_myString" expr="'A_fail'"/>
+				 <assign location="A_myBool" expr="false"/>
+				 <assign location="A_myReal" expr="7.7"/>
 			</onentry>
 		</state>
 		<state id="StateA">

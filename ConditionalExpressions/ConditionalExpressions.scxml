@@ -13,15 +13,15 @@
 		</initial>
 		<state id="A">
 			<onentry>
-					 <assign location="condition" expr="boolVar ? 1 : 0"/>
+				 <assign location="condition" expr="boolVar ? 1 : 0"/>
 			</onentry>
 			<transition event="e" cond="1 == (boolVar ? 1 : 0)" target="B">
 			</transition>
 		</state>
 		<state id="B">
 			<onentry>
-					 <assign location="condition" expr="((condition == 2) ? 1 : 2)"/>
-					 <assign location="stringCondition" expr="((condition == 2) ? 'True' : 'False')"/>
+				 <assign location="condition" expr="((condition == 2) ? 1 : 2)"/>
+				 <assign location="stringCondition" expr="((condition == 2) ? 'True' : 'False')"/>
 			</onentry>
 		</state>
 	</state>

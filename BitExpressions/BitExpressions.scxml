@@ -17,20 +17,20 @@
 		</initial>
 		<state id="StateA">
 			<onentry>
-					 <assign location="myBit1" expr="5"/>
-					 <assign location="myBit2" expr="7"/>
+				 <assign location="myBit1" expr="5"/>
+				 <assign location="myBit2" expr="7"/>
 			</onentry>
 			<transition event="e1"  target="StateB">
 			</transition>
 		</state>
 		<state id="StateB">
 			<onentry>
-					 <assign location="leftBitshift" expr="myBit1 &lt;&lt; 1"/>
-					 <assign location="rightBitshift" expr="myBit1 &gt;&gt; 1"/>
-					 <assign location="complementBitshift" expr="~myBit1"/>
-					 <assign location="bitwiseAnd" expr="myBit1 &amp; myBit2"/>
-					 <assign location="bitwiseOr" expr="myBit1 | myBit2"/>
-					 <assign location="bitwiseXor" expr="myBit1 ^ myBit2"/>
+				 <assign location="leftBitshift" expr="myBit1 &lt;&lt; 1"/>
+				 <assign location="rightBitshift" expr="myBit1 &gt;&gt; 1"/>
+				 <assign location="complementBitshift" expr="~myBit1"/>
+				 <assign location="bitwiseAnd" expr="myBit1 &amp; myBit2"/>
+				 <assign location="bitwiseOr" expr="myBit1 | myBit2"/>
+				 <assign location="bitwiseXor" expr="myBit1 ^ myBit2"/>
 			</onentry>
 		</state>
 	</state>

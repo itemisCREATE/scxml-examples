@@ -36,7 +36,7 @@
 		</state>
 		<state id="StateC">
 			<onentry>
-					 <assign location="value" expr="value + 10"/>
+				 <assign location="value" expr="value + 10"/>
 			</onentry>
 		</state>
 	</state>

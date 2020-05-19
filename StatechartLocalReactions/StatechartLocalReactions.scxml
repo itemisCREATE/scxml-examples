@@ -12,7 +12,7 @@
 		</state>
 		<onentry>
 			<if cond="true">
-				 <assign location="myInt" expr="100"/>
+			 <assign location="myInt" expr="100"/>
 			</if>
 		</onentry>
 		<transition event ="e1" cond="" type="internal" >

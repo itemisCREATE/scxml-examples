@@ -15,14 +15,14 @@
 		</state>
 		<state id="B">
 			<onentry>
-					 <assign location="realValue" expr="3 * Math.floor(5.5)"/>
+				 <assign location="realValue" expr="3 * Math.floor(5.5)"/>
 			</onentry>
 			<transition event="e" cond="(realValue * 0.1) &gt; Math.floor(1.4) &amp;&amp; Math.floor((realValue * intValue)) &lt; 100" target="C">
 			</transition>
 		</state>
 		<state id="C">
 			<onentry>
-					 <assign location="realValue" expr="Math.floor((realValue * intValue * 10.1))"/>
+				 <assign location="realValue" expr="Math.floor((realValue * intValue * 10.1))"/>
 			</onentry>
 		</state>
 	</state>

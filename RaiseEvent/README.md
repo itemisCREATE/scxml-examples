@@ -17,8 +17,8 @@
 		</state>
 		<state id="StateB">
 			<onentry>
-					<send event="e1">
-					</send>
+				<send event="e1">
+				</send>
 			</onentry>
 		</state>
 	</state>

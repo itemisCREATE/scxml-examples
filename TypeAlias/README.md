@@ -16,8 +16,8 @@
 		</initial>
 		<state id="Start">
 			<onentry>
-					 <assign location="myVar" expr="1"/>
-					 <assign location="myString" expr="'TypeSystem'"/>
+				 <assign location="myVar" expr="1"/>
+				 <assign location="myString" expr="'TypeSystem'"/>
 			</onentry>
 		</state>
 	</state>

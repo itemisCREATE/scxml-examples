@@ -15,7 +15,7 @@
 		</initial>
 		<state id="A">
 			<onentry>
-					 <assign location="x" expr="x + 1"/>
+				 <assign location="x" expr="x + 1"/>
 			</onentry>
 			<transition event="e"  target="B">
 			</transition>

@@ -16,19 +16,19 @@
 		</initial>
 		<state id="StateA">
 			<onentry>
-					 <assign location="myBool1" expr="true"/>
-					 <assign location="myBool2" expr="false"/>
+				 <assign location="myBool1" expr="true"/>
+				 <assign location="myBool2" expr="false"/>
 			</onentry>
 			<transition event="e1"  target="StateB">
 			</transition>
 		</state>
 		<state id="StateB">
 			<onentry>
-					 <assign location="and" expr="myBool1 &amp;&amp; myBool2"/>
-					 <assign location="or" expr="myBool1 || myBool2"/>
-					 <assign location="not" expr="!myBool1"/>
-					 <assign location="equal" expr="myBool1 == myBool2"/>
-					 <assign location="notequal" expr="(myBool1 != myBool2)"/>
+				 <assign location="and" expr="myBool1 &amp;&amp; myBool2"/>
+				 <assign location="or" expr="myBool1 || myBool2"/>
+				 <assign location="not" expr="!myBool1"/>
+				 <assign location="equal" expr="myBool1 == myBool2"/>
+				 <assign location="notequal" expr="(myBool1 != myBool2)"/>
 			</onentry>
 		</state>
 	</state>

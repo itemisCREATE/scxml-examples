@@ -13,13 +13,13 @@
 		</initial>
 		<state id="StateA">
 			<onentry>
-					 <assign location="value" expr="0"/>
+				 <assign location="value" expr="0"/>
 			</onentry>
 			<transition cond="value &lt; 10" type="internal" >
 				 <assign location="value" expr="value + 1"/>
 			</transition>
 			<onexit>
-					 <assign location="value" expr="0"/>
+				 <assign location="value" expr="0"/>
 			</onexit>
 			<transition event="e"  target="StateB">
 			</transition>

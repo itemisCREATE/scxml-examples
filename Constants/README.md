@@ -24,14 +24,14 @@
 		</state>
 		<state id="B">
 			<onentry>
-					 <assign location="result" expr="Named_two * x"/>
+				 <assign location="result" expr="Named_two * x"/>
 			</onentry>
 			<transition event="e3"  target="C">
 			</transition>
 		</state>
 		<state id="C">
 			<onentry>
-					 <assign location="result" expr="result * internalConstant"/>
+				 <assign location="result" expr="result * internalConstant"/>
 			</onentry>
 			<transition event="e2"  target="A">
 				 <assign location="result" expr="_event.data * x * Named_two * internalConstant"/>

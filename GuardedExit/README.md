@@ -17,7 +17,7 @@
 		<state id="A">
 			<onexit>
 				<if cond="guard">
-					 <assign location="done" expr="true"/>
+				 <assign location="done" expr="true"/>
 				</if>
 			</onexit>
 			<transition event="e"  target="B">

@@ -18,7 +18,7 @@
 		</initial>
 		<state id="A">
 			<onentry>
-					 <assign location="x" expr="x + 1"/>
+				 <assign location="x" expr="x + 1"/>
 			</onentry>
 			<initial>
 				<transition target="AB" type="internal" >
@@ -44,7 +44,7 @@
 			</history>
 			<state id="BA">
 				<onentry>
-						 <assign location="y" expr="y + 1"/>
+					 <assign location="y" expr="y + 1"/>
 				</onentry>
 				<initial>
 					<transition target="BAA" type="internal" >
@@ -72,7 +72,7 @@
 		</initial>
 		<state id="D">
 			<onentry>
-					 <assign location="z" expr="z + 1"/>
+				 <assign location="z" expr="z + 1"/>
 			</onentry>
 			<initial>
 				<transition target="DA" type="internal" >
@@ -80,7 +80,7 @@
 			</initial>
 			<state id="DA">
 				<onentry>
-						 <assign location="z" expr="z + 1"/>
+					 <assign location="z" expr="z + 1"/>
 				</onentry>
 				<initial>
 					<transition target="DAA" type="internal" >

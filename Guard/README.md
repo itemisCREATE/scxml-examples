@@ -21,7 +21,7 @@
 		</state>
 		<state id="B">
 			<onentry>
-					 <assign location="MyVar" expr="10"/>
+				 <assign location="MyVar" expr="10"/>
 			</onentry>
 			<transition event="Return"  target="A">
 			</transition>

@@ -16,10 +16,10 @@
 		</initial>
 		<state id="A">
 			<onentry>
-					 <assign location="entries" expr="entries + 1"/>
+				 <assign location="entries" expr="entries + 1"/>
 			</onentry>
 			<onexit>
-					 <assign location="exits" expr="exits + 1"/>
+				 <assign location="exits" expr="exits + 1"/>
 			</onexit>
 			<initial>
 				<transition target="B" type="internal" >

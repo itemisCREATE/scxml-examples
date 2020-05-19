@@ -11,6 +11,8 @@
 				</transition>
 			</initial>
 			<state id="B">
+				<transition event="g"  target="E">
+				</transition>
 				<transition event="f"  target="F">
 				</transition>
 				<transition event="e"  target="E">

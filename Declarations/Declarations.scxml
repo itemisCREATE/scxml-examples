@@ -24,11 +24,11 @@
 		</initial>
 		<state id="A">
 			<onentry>
-					 <assign location="varInA" expr="false"/>
-					 <assign location="varInB" expr="1"/>
-					 <assign location="varInC" expr="1.1"/>
-					 <assign location="varInD" expr="'blub'"/>
-					 <assign location="varInE" expr="1"/>
+				 <assign location="varInA" expr="false"/>
+				 <assign location="varInB" expr="1"/>
+				 <assign location="varInC" expr="1.1"/>
+				 <assign location="varInD" expr="'blub'"/>
+				 <assign location="varInE" expr="1"/>
 			</onentry>
 			<transition event="evInA"  target="B">
 			</transition>

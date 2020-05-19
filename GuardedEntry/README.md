@@ -17,7 +17,7 @@
 		<state id="A">
 			<onentry>
 				<if cond="guard">
-					 <assign location="done" expr="true"/>
+				 <assign location="done" expr="true"/>
 				</if>
 			</onentry>
 			<transition event="e"  target="B">
