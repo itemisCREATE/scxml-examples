@@ -1,0 +1,36 @@
+# CompositeChoiceEntry 
+
+![image](CompositeChoiceEntry_0.png)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="CompositeChoiceEntry">
+	<datamodel>
+		<data expr="true" id="guard1" />
+	</datamodel>
+	<state id="main_region">
+		<initial>
+			<transition target="StateA" type="internal" >
+			</transition>
+		</initial>
+		<state id="StateA">
+			<initial>
+				<transition target="StateA.choice_0" type="internal" >
+				</transition>
+			</initial>
+			<state id="State1">
+				<transition event="e1"  target="State2">
+				</transition>
+			</state>
+			<state id="State2">
+			</state>
+			<state id="StateA.choice_0">
+				<transition  cond="guard1" target="State1">
+				</transition>
+				<transition   target="State2">
+				</transition>
+			</state>
+		</state>
+	</state>
+</scxml>
+```

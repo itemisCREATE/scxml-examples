@@ -1,0 +1,51 @@
+# HistoryWithoutInitialStep 
+
+![image](HistoryWithoutInitialStep_0.png)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="HistoryWithoutInitialStep">
+	<state id="main_region">
+		<initial>
+			<transition target="A" type="internal" >
+			</transition>
+		</initial>
+		<state id="A">
+			<transition event="toB"  target="B">
+			</transition>
+			<transition event="toHistory"  target="he">
+			</transition>
+		</state>
+		<state id="B">
+			<initial>
+				<transition target="C" type="internal" >
+				</transition>
+			</initial>
+			<state id="C">
+				<transition event="next"  target="D">
+				</transition>
+			</state>
+			<state id="D">
+				<transition event="next"  target="E">
+				</transition>
+			</state>
+			<history type = "shallow" id="he">
+				<transition target="C">
+				</transition>
+			</history>
+			<state id="E">
+				<initial>
+					<transition target="F" type="internal" >
+					</transition>
+				</initial>
+				<state id="F">
+				</state>
+				<transition event="next"  target="C">
+				</transition>
+			</state>
+			<transition event="toA"  target="A">
+			</transition>
+		</state>
+	</state>
+</scxml>
+```

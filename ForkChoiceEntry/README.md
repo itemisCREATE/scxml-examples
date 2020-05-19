@@ -1,0 +1,50 @@
+# ForkChoiceEntry 
+
+![image](ForkChoiceEntry_0.png)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="ForkChoiceEntry">
+	<datamodel>
+		<data expr="false" id="guard1" />
+	</datamodel>
+	<state id="main_region">
+		<initial>
+			<transition target="StateA._r0.choice_0 StateAA" type="internal" >
+			</transition>
+		</initial>
+		<parallel id="StateA">
+			<state id="_r0">
+				<initial>
+					<transition target="State1" type="internal" >
+					</transition>
+				</initial>
+				<state id="State1">
+					<transition event="e1"  target="State2">
+					</transition>
+				</state>
+				<state id="State2">
+				</state>
+				<state id="StateA._r0.choice_0">
+					<transition  cond="guard1" target="State1">
+					</transition>
+					<transition   target="State2">
+					</transition>
+				</state>
+			</state>
+			<state id="_r1">
+				<initial>
+					<transition target="StateAA" type="internal" >
+					</transition>
+				</initial>
+				<state id="StateAA">
+					<transition event="e2"  target="StateB">
+					</transition>
+				</state>
+				<state id="StateB">
+				</state>
+			</state>
+		</parallel>
+	</state>
+</scxml>
+```

@@ -1,0 +1,35 @@
+# StateIsActive 
+
+![image](StateIsActive_0.png)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="StateIsActive">
+	<parallel>
+	<state id="R1">
+		<initial>
+			<transition target="R1A" type="internal" >
+			</transition>
+		</initial>
+		<state id="R1A">
+			<transition  cond="In('R2B')" target="R1B">
+			</transition>
+		</state>
+		<state id="R1B">
+		</state>
+	</state>
+	<state id="R2">
+		<initial>
+			<transition target="R2A" type="internal" >
+			</transition>
+		</initial>
+		<state id="R2A">
+			<transition event="Event1"  target="R2B">
+			</transition>
+		</state>
+		<state id="R2B">
+		</state>
+	</state>
+	</parallel>
+</scxml>
+```

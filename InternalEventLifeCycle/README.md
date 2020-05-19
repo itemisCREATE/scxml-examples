@@ -1,0 +1,45 @@
+# InternalEventLifeCycle 
+
+![image](InternalEventLifeCycle_0.png)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="InternalEventLifeCycle">
+	<parallel>
+	<state id="r1">
+		<initial>
+			<transition target="A" type="internal" >
+			</transition>
+		</initial>
+		<state id="A">
+			<transition event ="e" cond="" type="internal" >
+				<send event="i1">
+				</send>
+			</transition>
+			<transition event="i2"  target="B">
+			</transition>
+		</state>
+		<state id="B">
+			<transition event="e"  target="A">
+			</transition>
+		</state>
+	</state>
+	<state id="r2">
+		<initial>
+			<transition target="C" type="internal" >
+			</transition>
+		</initial>
+		<state id="C">
+			<transition event="i1"  target="D">
+			</transition>
+		</state>
+		<state id="D">
+			<transition event="f"  target="C">
+				<send event="i2">
+				</send>
+			</transition>
+		</state>
+	</state>
+	</parallel>
+</scxml>
+```
