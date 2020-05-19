@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="DeepEntry">
+	<datamodel>
+		<data expr="0" id="x" />
+		<data expr="0" id="y" />
+		<data expr="0" id="z" />
+	</datamodel>
+	<parallel>
+	<state id="r">
+		<initial>
+			<transition target="AB" type="internal" >
+			</transition>
+		</initial>
+		<state id="A">
+			<onentry>
+					 <assign location="x" expr="x + 1"/>
+			</onentry>
+			<initial>
+				<transition target="AB" type="internal" >
+				</transition>
+			</initial>
+			<state id="AB">
+			</state>
+		</state>
+	</state>
+	<state id="r2">
+		<initial>
+			<transition target="B" type="internal" >
+			</transition>
+		</initial>
+		<state id="B">
+			<initial>
+				<transition target="B.entry_0" type="internal" >
+				</transition>
+			</initial>
+			<history type = "shallow" id="B.entry_0">
+				<transition   target="BA">
+				</transition>
+			</history>
+			<state id="BA">
+				<onentry>
+						 <assign location="y" expr="y + 1"/>
+				</onentry>
+				<initial>
+					<transition target="BAA" type="internal" >
+					</transition>
+				</initial>
+				<state id="BAA">
+				</state>
+				<transition event="e"  target="BB">
+				</transition>
+			</state>
+			<state id="BB">
+			</state>
+			<transition event="f"  target="C">
+			</transition>
+		</state>
+		<state id="C">
+			<transition event="f"  target="B">
+			</transition>
+		</state>
+	</state>
+	<state id="r3">
+		<initial>
+			<transition target="DeepEntry.r3.entry_0" type="internal" >
+			</transition>
+		</initial>
+		<state id="D">
+			<onentry>
+					 <assign location="z" expr="z + 1"/>
+			</onentry>
+			<initial>
+				<transition target="DA" type="internal" >
+				</transition>
+			</initial>
+			<state id="DA">
+				<onentry>
+						 <assign location="z" expr="z + 1"/>
+				</onentry>
+				<initial>
+					<transition target="DAA" type="internal" >
+					</transition>
+				</initial>
+				<state id="DAA">
+				</state>
+			</state>
+		</state>
+		<history type="deep" id="DeepEntry.r3.entry_0">
+			<transition   target="DAA">
+			</transition>
+		</history>
+	</state>
+	</parallel>
+</scxml>

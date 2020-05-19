@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="StateTimeTriggerAfterCancel">
+	<datamodel>
+		<data expr="0" id="value" />
+	</datamodel>
+	<state id="main_region">
+		<initial>
+			<transition target="StateA" type="internal" >
+			</transition>
+		</initial>
+		<state id="StateA">
+			<onentry>
+				<send event="StateA_t_0_timeEvent_0" delay="5s"/>
+			</onentry>
+			<onexit>
+				<cancel sendid="StateA_t_0_timeEvent_0" />
+			</onexit>
+			<onentry>
+				<send event="StateA_t_1_timeEvent_0" delay="3s"/>
+			</onentry>
+			<onexit>
+				<cancel sendid="StateA_t_1_timeEvent_0" />
+			</onexit>
+			<transition event="StateA_t_0_timeEvent_0"  target="StateB">
+				 <assign location="value" expr="value + 1"/>
+			</transition>
+			<transition event="StateA_t_1_timeEvent_0"  target="StateC">
+			</transition>
+		</state>
+		<state id="StateB">
+		</state>
+		<state id="StateC">
+			<onentry>
+					 <assign location="value" expr="value + 10"/>
+			</onentry>
+		</state>
+	</state>
+</scxml>

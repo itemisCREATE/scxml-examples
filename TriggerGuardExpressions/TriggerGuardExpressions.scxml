@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="TriggerGuardExpressions">
+	<datamodel>
+		<data expr="false" id="b" />
+	</datamodel>
+	<state id="main_region">
+		<initial>
+			<transition target="A" type="internal" >
+			</transition>
+		</initial>
+		<state id="A">
+			<transition event="e1" cond="b" target="B">
+			</transition>
+			<transition event="e2" cond="b" target="B">
+			</transition>
+		</state>
+		<state id="B">
+			<transition event="back"  target="A">
+			</transition>
+		</state>
+	</state>
+</scxml>
