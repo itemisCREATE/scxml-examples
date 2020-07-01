@@ -67,7 +67,7 @@
 	</state>
 	<state id="r3">
 		<initial>
-			<transition target="DeepEntry.r3.entry_0" type="internal" >
+			<transition target="r3.entry_0" type="internal" >
 			</transition>
 		</initial>
 		<state id="D">
@@ -90,7 +90,7 @@
 				</state>
 			</state>
 		</state>
-		<history type="deep" id="DeepEntry.r3.entry_0">
+		<history type="deep" id="r3.entry_0">
 			<transition   target="DAA">
 			</transition>
 		</history>

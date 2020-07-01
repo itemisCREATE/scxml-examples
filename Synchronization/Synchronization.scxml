@@ -42,11 +42,11 @@
 				<state id="StateB">
 				</state>
 			</state>
-			<transition  cond="guard2 &amp;&amp; guard1 &amp;&amp; In('StateB') &amp;&amp; In('State2')" target="Synchronization.final_0">
+			<transition  cond="guard2 &amp;&amp; guard1 &amp;&amp; In('StateB') &amp;&amp; In('State2')" target="final_0">
 			</transition>
-			<transition  cond="guard2 &amp;&amp; guard1 &amp;&amp; In('StateB') &amp;&amp; In('State2')" target="Synchronization.final_0">
+			<transition  cond="guard2 &amp;&amp; guard1 &amp;&amp; In('StateB') &amp;&amp; In('State2')" target="final_0">
 			</transition>
 		</parallel>
-		<final id="Synchronization.final_0"/>	
+		<final id="final_0"/>	
 	</state>
 </scxml>

@@ -11,10 +11,10 @@
 			</transition>
 		</initial>
 		<state id="myState">
-			<transition   target="FinalState.final_0">
+			<transition   target="final_0">
 			</transition>
 		</state>
-		<final id="FinalState.final_0"/>	
+		<final id="final_0"/>	
 	</state>
 </scxml>
 ```

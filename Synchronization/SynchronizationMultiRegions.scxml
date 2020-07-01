@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" datamodel="ecmascript" name="SynchronizationMultiRegions">
+	<state id="main_region">
+		<initial>
+			<transition target="State1 State11" type="internal" >
+			</transition>
+		</initial>
+		<parallel id="StateA">
+			<state id="_r0">
+				<initial>
+					<transition target="State1" type="internal" >
+					</transition>
+				</initial>
+				<state id="State1">
+					<transition event="e1"  target="State2">
+					</transition>
+				</state>
+				<state id="State2">
+				</state>
+			</state>
+			<state id="_r1">
+				<initial>
+					<transition target="State11" type="internal" >
+					</transition>
+				</initial>
+				<state id="State11">
+					<transition event="e1"  target="State22">
+					</transition>
+				</state>
+				<state id="State22">
+				</state>
+			</state>
+			<state id="_r2">
+				<initial>
+					<transition target="State111" type="internal" >
+					</transition>
+				</initial>
+				<state id="State111">
+				</state>
+			</state>
+			<transition  cond="In('State22') &amp;&amp; In('State2') &amp;&amp; In('State111')" target="final_0">
+			</transition>
+		</parallel>
+		<final id="final_0"/>	
+	</state>
+</scxml>

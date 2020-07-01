@@ -9,16 +9,16 @@
 			</transition>
 		</initial>
 		<state id="A">
-			<transition event="e"  target="Choice.choice_0">
+			<transition event="e"  target="choice_0">
 			</transition>
-			<transition event="f"  target="Choice.choice_2">
+			<transition event="f"  target="choice_2">
 			</transition>
-			<transition event="g"  target="Choice.choice_1">
+			<transition event="g"  target="choice_1">
 			</transition>
-			<transition event="h"  target="Choice.choice_3">
+			<transition event="h"  target="choice_3">
 			</transition>
 		</state>
-		<state id="Choice.choice_0">
+		<state id="choice_0">
 			<transition  cond="c" target="C">
 			</transition>
 			<transition   target="B">
@@ -28,19 +28,19 @@
 		</state>
 		<state id="C">
 		</state>
-		<state id="Choice.choice_1">
+		<state id="choice_1">
 			<transition  cond="c" target="C">
 			</transition>
 			<transition   target="B">
 			</transition>
 		</state>
-		<state id="Choice.choice_2">
+		<state id="choice_2">
 			<transition  cond="c" target="C">
 			</transition>
 			<transition   target="B">
 			</transition>
 		</state>
-		<state id="Choice.choice_3">
+		<state id="choice_3">
 			<transition  cond="c" target="C">
 			</transition>
 			<transition   target="B">
